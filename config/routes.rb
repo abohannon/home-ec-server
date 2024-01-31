@@ -8,4 +8,8 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
+  namespace :api do
+    get 'customers' => 'customers#index'
+  end
 end
